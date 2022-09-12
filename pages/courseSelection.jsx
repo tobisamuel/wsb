@@ -139,8 +139,8 @@ const CourseSelection = () => {
 
             <div className="mt-8 space-y-8">
               <div className="flex">
-                <div className="w-[274px] h-[154px]">
-                  <Image src="../public/173.png" alt="laptop" />
+                <div className="w-[274px] h-[154px] relative">
+                  <Image src="/173.png" alt="laptop" layout="fill" />
                 </div>
                 <div className="flex-1 pl-11 pt-8 bg-greyblue">
                   <span className="text-tabac text-[13px] font-inter font-bold">
@@ -156,10 +156,12 @@ const CourseSelection = () => {
               </div>
 
               <div className="flex">
-                <div className="w-[274px] h-[154px] bg-subtext"></div>
+                <div className="w-[274px] h-[154px] relative">
+                  <Image src="/174.png" alt="laptop" layout="fill" />
+                </div>
                 <div className="flex-1 pl-11 pt-8 bg-greyblue">
                   <span className="text-tabac text-[13px] font-inter font-bold">
-                    Adminstration
+                    IT in Business
                   </span>
                   <div className="mt-3 flex gap-2">
                     <GrLocation />
@@ -171,10 +173,12 @@ const CourseSelection = () => {
               </div>
 
               <div className="flex">
-                <div className="w-[274px] h-[154px] bg-subtext"></div>
+                <div className="w-[274px] h-[154px] relative">
+                  <Image src="/175.png" alt="laptop" layout="fill" />
+                </div>
                 <div className="flex-1 pl-11 pt-8 bg-greyblue">
                   <span className="text-tabac text-[13px] font-inter font-bold">
-                    Adminstration
+                    Management Engineering
                   </span>
                   <div className="mt-3 flex gap-2">
                     <GrLocation />
@@ -186,10 +190,12 @@ const CourseSelection = () => {
               </div>
 
               <div className="flex">
-                <div className="w-[274px] h-[154px] bg-subtext"></div>
+                <div className="w-[274px] h-[154px] relative">
+                  <Image src="/176.png" alt="laptop" layout="fill" />
+                </div>
                 <div className="flex-1 pl-11 pt-8 bg-greyblue">
                   <span className="text-tabac text-[13px] font-inter font-bold">
-                    Adminstration
+                    Finance and Accounting
                   </span>
                   <div className="mt-3 flex gap-2">
                     <GrLocation />
