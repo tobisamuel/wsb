@@ -43,9 +43,7 @@ const Navbar = () => {
         Banking Schools / Meet WSB
       </h1>
       <div className="absolute top-[139px] left-[25px] w-[calc(100%-50px)] h-[108px] bg-white flex justify-between items-center shadow-lg">
-        <h1 className="text-[40px] font-robotoslab ml-[38px]">
-          First degree Studies
-        </h1>
+        <h1 className="text-[40px] font-robotoslab ml-[38px]">Meet WSB</h1>
         <button className="px-[23px] py-[15px] mr-[73px] bg-pink rounded-md text-white text-xs font-bold">
           subscribe online
         </button>

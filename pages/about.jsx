@@ -1,15 +1,24 @@
 import Image from "next/image";
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/AboutLayout";
 
-const Administrationlink = () => {
+const AboutPage = () => {
   return (
     <PageLayout>
       <div className="mt-12 px-[100px]">
-        <h2 className="ml-6 text-[40px] text-tabac font-bold font-robotoslab">
-          What do you gain by studying administration at WSB?
-        </h2>
+        <div className="pl-5 flex items-center space-x-14 text-subtext font-medium font-inter border-b border-lightgray">
+          <span className="px-3 py-[25px] border-b-4 border-tabac">
+            Meet WSB
+          </span>
+          <span className="px-3 py-[25px]">Why WSB</span>
+          <span className="px-3 py-[25px]">Who creates WSB</span>
+          <span className="px-3 py-[25px]">
+            We support science with technology
+          </span>
+          <span className="px-3 py-[25px]">Education standards</span>
+          <span className="px-3 py-[25px]">More</span>
+        </div>
 
-        <div className="mt-9 pl-24 space-y-32">
+        <div className="mt-9 mb-20 pl-24 space-y-32">
           <div className="flex items-center">
             <div className="basis-1/2">
               <p className="text-tabac font-inter">
@@ -88,78 +97,9 @@ const Administrationlink = () => {
             </div>
           </div>
         </div>
-
-        <h2 className="mt-20 text-[40px] text-tabac font-bold font-robotoslab">
-          Administration at WSB includes?
-        </h2>
-
-        <div className="mt-12 mb-20 flex font-inter">
-          <div className="basis-1/4 px-24 flex flex-col justify-center">
-            <div className="flex justify-center">
-              <Image
-                src="/handshake.png"
-                alt="gears"
-                width={100}
-                height={100}
-              />
-            </div>
-            <p className="mt-4 text-center text-xs">
-              Practical knowledge - our programs will help you start your
-              professional future
-            </p>
-          </div>
-
-          <div className="basis-1/4 px-20 flex flex-col justify-center">
-            <div className="flex justify-center">
-              <Image
-                src="/laptop-2.png"
-                alt="checkboxes"
-                width={100}
-                height={100}
-              />
-            </div>
-            <p className="mt-4 text-center text-xs">
-              Friendly organization of classes - you will combine studies with
-              work and private life.
-            </p>
-          </div>
-
-          <div className="basis-1/4 px-24 flex flex-col justify-center">
-            <div className="flex justify-center">
-              <Image src="/tie.png" alt="laptop" width={68} height={98} />
-            </div>
-            <p className="mt-4 text-center text-xs">
-              Time for yourself - you can deal with many student matters online.
-            </p>
-          </div>
-
-          <div className="basis-1/4 px-[110px] flex flex-col justify-center">
-            <div className="flex justify-center">
-              <Image
-                src="/settings.png"
-                alt="organization"
-                width={100}
-                height={100}
-              />
-            </div>
-            <p className="mt-4 text-center text-xs">
-              Quality - WSB belongs to the largest educational holding in
-              Poland.
-            </p>
-          </div>
-        </div>
       </div>
     </PageLayout>
   );
 };
 
-export default Administrationlink;
-
-{
-  /* <div className="basis-1/2 relative flex">
-  <div className="w-[541px] h-[325px] mr-[53px] relative z-10">
-    <Image src="/167.png" alt="pointing" layout="fill" objectFit="contain" />
-  </div>
-  <div className="absolute top-[41px] left-[53px] w-[541px] h-[325px] bg-shadowgray"></div>
-</div>; */
-}
+export default AboutPage;
