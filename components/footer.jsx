@@ -68,7 +68,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-1/4">
-          <p className="mb-6  text-[13px]">Go to the university&#39s website</p>
+          <p className="mb-6  text-[13px]">
+            Go to the university&#39;s website
+          </p>
           <select className="w-full px-2 py-4 rounded-[5px] border border-black text-xs ">
             <option value="WSBgroup" className="">
               WSB Group
