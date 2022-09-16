@@ -29,7 +29,7 @@ const PaymentPage = () => {
                     id="countries"
                     class="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
-                    <option selected>SELECT</option>
+                    <option>SELECT</option>
                   </select>
                 </fieldset>
 
@@ -41,7 +41,7 @@ const PaymentPage = () => {
                     id="countries"
                     class="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
-                    <option selected>1</option>
+                    <option>1</option>
                   </select>
                 </fieldset>
               </div>

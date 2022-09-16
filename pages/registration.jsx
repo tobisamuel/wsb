@@ -74,7 +74,7 @@ const RegistrationForm = () => {
                     id="countries"
                     className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
-                    <option selected>
+                    <option>
                       LEGAL BASIS FOR STAYING IN POLAND (E.G VISA, PERMIT)
                     </option>
                   </select>
@@ -82,7 +82,7 @@ const RegistrationForm = () => {
                     id="countries"
                     className="w-full h-[72px] mt-[10px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
-                    <option selected>
+                    <option>
                       MAY LEGALLY STAY IN POLAND UNTIL (BASED ON A VISA OR
                       PERMIT)
                     </option>
@@ -120,7 +120,7 @@ const RegistrationForm = () => {
                         id="countries"
                         className="w-1/2 h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                       >
-                        <option selected>GENDER</option>
+                        <option>GENDER</option>
                       </select>
                     </div>
 
@@ -128,7 +128,7 @@ const RegistrationForm = () => {
                       id="countries"
                       className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                     >
-                      <option selected>IDENTITY CARD</option>
+                      <option>IDENTITY CARD</option>
                     </select>
 
                     <input
@@ -141,7 +141,7 @@ const RegistrationForm = () => {
                       id="countries"
                       className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                     >
-                      <option selected>COUNTRY WHERE ID CARD ISSUED</option>
+                      <option>COUNTRY WHERE ID CARD ISSUED</option>
                     </select>
 
                     <div className="flex gap-[14px]">
@@ -149,7 +149,7 @@ const RegistrationForm = () => {
                         id="countries"
                         className="w-1/2 h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                       >
-                        <option selected>COUNTRY OF BIRTH</option>
+                        <option>COUNTRY OF BIRTH</option>
                       </select>
 
                       <input
@@ -163,7 +163,7 @@ const RegistrationForm = () => {
                       id="countries"
                       className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                     >
-                      <option selected>COUNTRY OF ORIGIN</option>
+                      <option>COUNTRY OF ORIGIN</option>
                     </select>
                   </div>
 
@@ -226,7 +226,7 @@ const RegistrationForm = () => {
                         id="countries"
                         className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                       >
-                        <option selected>POLAND</option>
+                        <option>POLAND</option>
                       </select>
 
                       <div className="flex gap-[14px]">
@@ -234,7 +234,7 @@ const RegistrationForm = () => {
                           id="countries"
                           className="w-1/2 h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                         >
-                          <option selected>STREET NAME</option>
+                          <option>STREET NAME</option>
                         </select>
 
                         <input
@@ -262,7 +262,7 @@ const RegistrationForm = () => {
                         id="countries"
                         className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                       >
-                        <option selected>
+                        <option>
                           RESIDENCE ADDRESS PRIOR TO COURSE/PROGRAM
                         </option>
                       </select>
