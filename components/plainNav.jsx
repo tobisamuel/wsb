@@ -2,7 +2,7 @@ import { BiSearch } from "react-icons/bi";
 
 const PlainNav = () => {
   return (
-    <div className=" h-[92px] mx-auto bg-white font-inter font-bold">
+    <div className="h-[92px] mx-auto bg-white font-inter font-bold">
       <div className="w-full h-full flex">
         <div className="basis-1/5 flex items-center ml-7">
           <h3>Wyzsze Szkoly Bankowe</h3>
