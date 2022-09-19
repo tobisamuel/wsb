@@ -20,38 +20,38 @@ const SignUpOnline = () => {
           <form className="mt-9 space-y-2">
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>TOWN/CITY</option>
             </select>
 
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>DATE OF ADMISSION </option>
             </select>
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>LEVEL OF EDUCATION </option>
             </select>
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>COURSE/PROGRAM </option>
             </select>
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>FORM OF STUDIES </option>
             </select>
             <select
               id="countries"
-              class="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full px-5 py-6 bg-transparent text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>THE METHOD OF IMPLIMENTING THE STUDIES</option>
             </select>

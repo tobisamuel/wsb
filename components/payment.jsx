@@ -1,12 +1,9 @@
-import Layout from "../components/Layout";
-import AccountMenu from "../components/accountMenu";
 import { BsArrowRight, BsClockHistory } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 
-const PaymentPage = () => {
+const PaymentForm = ({ nextStep, prevStep }) => {
   return (
-    <Layout>
-      <AccountMenu />
+    <>
       <div className="mt-6 mx-[103px] flex justify-between">
         <div className="w-[760px]">
           <div className="pt-20 pl-10 pr-32 bg-lightgray">
@@ -27,7 +24,7 @@ const PaymentPage = () => {
                   </legend>
                   <select
                     id="countries"
-                    class="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
+                    className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
                     <option>SELECT</option>
                   </select>
@@ -39,7 +36,7 @@ const PaymentPage = () => {
                   </legend>
                   <select
                     id="countries"
-                    class="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
+                    className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
                   >
                     <option>1</option>
                   </select>
@@ -74,10 +71,10 @@ const PaymentPage = () => {
                         id="default-toggle"
                         className="sr-only peer"
                       />
-                      <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-toggle"></div>
+                      <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-toggle peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
                     </label>
                   </div>
-                  <p className="ml-4 text-xs font-medium text-tabac">
+                  <p className="ml-4 text-sm font-roboto font-medium text-tabac">
                     I confirm that I meet the conditions of promotion of
                     graduates
                   </p>
@@ -141,9 +138,11 @@ const PaymentPage = () => {
                 the application form.
               </p>
             </div>
+
             <button
               type="button"
               className="basis-1/2 h-[72px] w-full px-[29px] py-[15px] flex items-center justify-between bg-pink text-white rounded-md"
+              onClick={nextStep}
             >
               <p className="text-xs font-inter font-bold">
                 NEXT: EDUCATION & WORK EXPERIENCE
@@ -226,11 +225,12 @@ const PaymentPage = () => {
       <button
         type="button"
         className="ml-32 mt-16 mb-[60px] px-[14px] py-[10px] border border-buttongray text-xs font-inter font-bold"
+        onClick={prevStep}
       >
         Go back
       </button>
-    </Layout>
+    </>
   );
 };
 
-export default PaymentPage;
+export default PaymentForm;

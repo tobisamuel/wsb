@@ -1,10 +1,6 @@
-import Layout from "../components/Layout";
-import AccountMenu from "../components/accountMenu";
-
 const Congrats = () => {
   return (
-    <Layout>
-      <AccountMenu />
+    <>
       <div className="h-[1112px] mt-2 mb-7 mx-24 bg-lightgray">
         <h1 className="mt-16 ml-10 text-[96px] text-lightblue font-robotoslab font-[900]">
           Congratulations
@@ -45,7 +41,7 @@ const Congrats = () => {
       <button className="ml-32 mt-7 mb-[60px] px-[14px] py-[10px] border border-buttongray text-xs font-inter font-bold">
         Go to your Account
       </button>
-    </Layout>
+    </>
   );
 };
 

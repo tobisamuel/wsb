@@ -1,12 +1,9 @@
-import Layout from "../components/Layout";
-import AccountMenu from "../components/accountMenu";
 import { BsArrowRight, BsClockHistory } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 
-const RegistrationForm = () => {
+const RegistrationForm = ({ nextStep }) => {
   return (
-    <Layout>
-      <AccountMenu />
+    <>
       <div className="mt-6 mx-[103px] flex justify-between">
         <div className="w-[770px]">
           <div className="pt-20 pl-10 pr-32 bg-lightgray">
@@ -310,13 +307,13 @@ const RegistrationForm = () => {
                 the application form.
               </p>
             </div>
+
             <button
               type="button"
-              className="basis-1/2 h-[72px] w-full px-[29px] py-[15px] flex items-center justify-between bg-pink text-white rounded-md"
+              className="basis-1/2 h-[72px] w-full px-[29px] py-[15px] flex items-center justify-between bg-pink text-white rounded-md text-xs font-inter font-bold"
+              onClick={nextStep}
             >
-              <p className="text-xs font-inter font-bold">
-                NEXT: PRICING AND PROMOTIONS
-              </p>
+              NEXT: PRICING AND PROMOTIONS
               <span className="text-xl">
                 <BsArrowRight />
               </span>
@@ -417,7 +414,7 @@ const RegistrationForm = () => {
       >
         Go back
       </button>
-    </Layout>
+    </>
   );
 };
 

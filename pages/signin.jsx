@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { FaRegCheckCircle } from "react-icons/fa";
 import Layout from "../components/Layout";
@@ -79,12 +80,14 @@ const Signin = () => {
               </div>
             </div>
 
-            <button className="w-full h-[72px] mt-8 px-8 flex items-center justify-between bg-white rounded-md text-tabac text-xs font-inter font-bold">
-              <p>REGISTER</p>
-              <span className="text-xl">
-                <BsArrowRight />
-              </span>
-            </button>
+            <Link href="/signup">
+              <a className="w-full h-[72px] mt-8 px-8 flex items-center justify-between bg-white rounded-md text-tabac text-xs font-inter font-bold">
+                <p>REGISTER</p>
+                <span className="text-xl">
+                  <BsArrowRight />
+                </span>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

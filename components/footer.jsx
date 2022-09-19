@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   FiFacebook,
   FiInstagram,
@@ -13,21 +14,31 @@ const Footer = () => {
         <div className="flex items-center">
           <span className="text-[11px] ">We are here:</span>
           <div className="flex items-center text-2xl space-x-8 ml-2">
-            <span>
-              <FiFacebook />
-            </span>
-            <span>
-              <FiLinkedin />
-            </span>
-            <span>
-              <FiTwitter />
-            </span>
-            <span>
-              <FiInstagram />
-            </span>
-            <span>
-              <FiYoutube />
-            </span>
+            <Link href="/">
+              <a>
+                <FiFacebook />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FiLinkedin />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FiTwitter />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FiInstagram />
+              </a>
+            </Link>
+            <Link href="/">
+              <a>
+                <FiYoutube />
+              </a>
+            </Link>
           </div>
         </div>
         <div className="flex gap-20  text-[11px]">
@@ -42,9 +53,17 @@ const Footer = () => {
           <p className="mb-6  text-[13px]">WSB</p>
           <div>
             <ul className=" space-y-4 text-xs">
-              <li>Meet WSB</li>
-              <li>Cooperation with business</li>
-              <li>Contact</li>
+              <li>
+                <Link href="/about">Meet WSB</Link>
+              </li>
+              <li>
+                <Link href="/cooperation-with-business">
+                  Cooperation with business
+                </Link>
+              </li>
+              <li>
+                <Link href="">Contact</Link>
+              </li>
             </ul>
           </div>
         </div>

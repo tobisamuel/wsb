@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FiFacebook,
   FiInstagram,
@@ -27,7 +28,9 @@ const Blog = () => {
 
           <div className="w-1/2 pl-8 pt-10 pr-44 bg-cyan-blue font-inter">
             <h2 className="text-4xl font-bold">
-              Burnout - is it going to happen to you too?
+              <Link href="/blog-post">
+                Burnout - is it going to happen to you too?
+              </Link>
             </h2>
             <span className="text-xs">August 2, 2022</span>
             <div className="mt-6 flex items-center gap-3">

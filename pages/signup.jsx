@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { GrStatusGood } from "react-icons/gr";
@@ -19,7 +20,7 @@ const Signup = () => {
               can skip Account setup <br /> and sign in using your Extranet
               login and password.
             </p>
-            <form className="mt-[51px] space-y-4">
+            <form className="mt-[51px] space-y-4 font-roboto">
               <input
                 type="text"
                 placeholder="FIRST NAME"
@@ -81,7 +82,7 @@ const Signup = () => {
                       id="default-toggle"
                       className="sr-only peer"
                     />
-                    <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-toggle"></div>
+                    <div className="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-toggle peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all"></div>
                   </label>
                 </div>
                 <p className="ml-1 text-xs font-medium text-tabac">
@@ -127,12 +128,15 @@ const Signup = () => {
               <h2 className="text-[40px] text-tabac font-robotoslab font-bold">
                 Already have an Applicant&#39;s <br /> Account?
               </h2>
-              <button className="w-80 h-[72px] mt-6 px-8 flex items-center justify-between bg-tabac rounded-md text-white text-xs font-inter font-bold">
-                <p>SIGN IN</p>
-                <span className="text-xl">
-                  <BsArrowRight />
-                </span>
-              </button>
+
+              <Link href="/signin">
+                <a className="w-80 h-[72px] mt-6 px-8 flex items-center justify-between bg-tabac rounded-md text-white text-xs font-inter font-bold">
+                  <p>SIGN IN</p>
+                  <span className="text-xl">
+                    <BsArrowRight />
+                  </span>
+                </a>
+              </Link>
             </div>
           </div>
         </div>

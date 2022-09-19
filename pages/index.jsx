@@ -85,9 +85,11 @@ export default function Home() {
             You already know what you want to study at WSB? Go to online
             registration
           </p>
-          <button className="mt-7 p-4 flex items-center justify-center bg-pink rounded-md text-white text-xs font-inter font-bold">
-            Sign up
-          </button>
+          <Link href="/signup">
+            <a className="w-fit mt-7 p-4 flex items-center justify-center bg-pink rounded-md text-white text-xs font-inter font-bold ">
+              Sign up
+            </a>
+          </Link>
         </div>
       </div>
 

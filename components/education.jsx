@@ -1,12 +1,9 @@
-import Layout from "../components/Layout";
-import AccountMenu from "../components/accountMenu";
 import { BsArrowRight, BsClockHistory } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 
-const EducationPage = () => {
+const EducationForm = ({ nextStep, prevStep }) => {
   return (
-    <Layout>
-      <AccountMenu />
+    <>
       <div className="mt-6 mb-7 mx-[103px] flex justify-between">
         <div className="w-[760px] pt-20 pl-10 pr-32 bg-lightgray">
           <h1 className="text-tabac text-[40px] font-bold font-robotoslab">
@@ -57,7 +54,7 @@ const EducationPage = () => {
 
             <select
               id="countries"
-              class="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
+              className="w-full h-[72px] pl-7 text-tabac text-xs font-bold font-inter rounded-md border border-border"
             >
               <option>
                 COUNTRY WHERE SECONDARY EDUCATION CERTIFICATE WAS ISSUED
@@ -98,7 +95,10 @@ const EducationPage = () => {
                   application form.
                 </p>
               </div>
-              <button className="h-[72px] w-[258px] px-[29px] py-[15px] flex items-center justify-between bg-pink text-white rounded-md">
+              <button
+                className="h-[72px] w-[258px] px-[29px] py-[15px] flex items-center justify-between bg-pink text-white rounded-md"
+                onClick={nextStep}
+              >
                 <p className="text-xs font-inter font-bold">NEXT: SUMMARY</p>
                 <span className="text-xl">
                   <BsArrowRight />
@@ -175,11 +175,14 @@ const EducationPage = () => {
           </div>
         </div>
       </div>
-      <button className="ml-32 mt-4 mb-[60px] px-[14px] py-[10px] border border-buttongray text-xs font-inter font-bold">
+      <button
+        className="ml-32 mt-4 mb-[60px] px-[14px] py-[10px] border border-buttongray text-xs font-inter font-bold"
+        onClick={prevStep}
+      >
         Go back
       </button>
-    </Layout>
+    </>
   );
 };
 
-export default EducationPage;
+export default EducationForm;
