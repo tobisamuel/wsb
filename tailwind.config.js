@@ -7,8 +7,10 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        imageleft: "-38px 33px 0px 0px #C4C4C4",
-        imageright: "53px 41px 0px 0px #C4C4C4",
+        imageleft: "-19px 16px 0px 0px #C4C4C4",
+        imageright: "26px 20px 0px 0px #C4C4C4",
+        imageleftmd: "-38px 33px 0px 0px #C4C4C4",
+        imagerightmd: "53px 41px 0px 0px #C4C4C4",
         home: "0px 4px 20px 2px rgba(0, 0, 0, 0.25)",
       },
       fontSize: { xxs: "0.625rem" },
